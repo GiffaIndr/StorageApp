@@ -1,0 +1,155 @@
+.main-container {
+    height: 100vh;
+    background-color: var(--main-color);
+    width: 100vw;
+    display       : flex;
+    flex-direction: column;
+    position      : absolute;
+    top           : 0;
+    bottom        : 0;
+    left          : 0;
+    right         : 0;
+  }
+  .bg-container{
+    background-image:linear-gradient(20deg, var(--main-color), rgba(48, 2, 255, 0.61) ), url("/assets/img/desktop.gif");
+   background-size: cover;
+   background-color: var(--main-color);
+    width: 100%;
+    height: 100%;
+  }
+  .header{
+    
+  }
+  
+  .header-container {
+    width: calc(100vw - 250px);
+    margin-left: 250px;
+  }
+  .mat-drawer {
+    width: 250px;
+  }
+  .router-container{
+    padding: 1rem;
+  }
+  ::ng-deep .mat-drawer-inner-container{
+    background-color: var(--main-color);
+    color: white;
+  }
+//   .header{
+
+//     top: 0;
+//     bottom: 0;
+
+//   }
+.btn-r{
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: var(--button-color);
+    font-size: large;
+    color: var(--second-color);
+    transition: ease 0.5s;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.326);
+}
+.btn-r:hover{
+    transition: ease 0.5s;
+    background-color: rgba(255, 255, 255, 0.075);
+    color: var(--second-color) !important;
+    box-shadow: 7px 12px 12px var(--button-color);
+    border: none;
+}
+.garis{
+    width: 10%;
+    border-radius:5px;
+    height: 1vh;
+    background-color: white ;
+}
+.carousel{
+    width: 100%;
+    height: 100px;
+}
+.garis-2{
+    width: 10%;
+    border-radius:5px;
+    height: 1vh;
+    background-color: var(--main-color);
+}
+.btn-a{
+    border: 1.5px solid var(--second-color);
+    border-radius: 10px;
+    font-size: 12px;
+    box-shadow: 0 0 5px var(--second-color);
+}
+.text-color{
+    color: white;
+    margin-bottom: 1rem;
+}
+::ng-deep .p-card .p-card-body {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 13px;
+    padding: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 5px 5px 7px var(--shadow-color);
+   
+}
+
+::ng-deep .p-component{
+    border-radius: 14px;
+}
+::ng-deep .p-card-content{
+    padding: 0;
+}
+.container{
+    margin-bottom: 10rem;
+}
+
+.header{
+    margin-top: 150px;
+    color: var(--second-color);
+}
+.content{
+    text-align: center;
+    margin-top: 150px;
+}
+
+span{
+    color: var(--text-color);
+}
+.card-tp{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.picsum-img-wrapper{
+text-align: center;
+
+}
+
+.img-carousel{
+    width: auto;
+    height: 50vh;
+}
+.prev{
+    border-radius: 1rem;
+}
+.dialog-app{
+    background-color:white;
+}
+::ng-deep .p-dialog-draggable .p-dialog-header{
+background-color: var(--main-color);
+color: var(--second-color);
+box-shadow: 0 0 5px var(--main-color);
+} 
+::ng-deep .p-dialog .p-dialog-content {
+    box-shadow: 0 0 5px var(--second-color);
+}
+.content-card{
+    flex-direction: column;
+    width: calc(100%/3);
+}
+.content-card-1{
+    height: 100;
+    flex-direction: column;
+    width: calc(100%/2);
+}

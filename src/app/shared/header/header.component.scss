@@ -1,0 +1,16 @@
+.btn-l{
+ border: 1.5px solid var(--second-color);   
+ box-shadow: 0 0 1px white;
+ background-color: #3b3676b8;
+ color: var(--second-color);
+}
+.btn-l:hover{
+    background-color: var(--third-color);
+    color: var(--second-color);
+    border: 1.5px solid var(--third-color);
+    transition: 0.5s ease;
+    box-shadow: 0 0 5px var(--third-color);
+}
+.header{
+    color: var(--second-color);
+}

@@ -1,0 +1,80 @@
+<div class="d-grid gap-5">
+  <div>
+    <div class="container">
+      <div class="d-grid">
+        <div class="d-flex">
+          <div></div>
+        </div>
+        <div class="header">
+          <div class="album">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h1 style="font-size: 4rem; font-family: 'Righteous', cursive">
+                  <span>Album</span>
+                </h1>
+                <p>
+                  this is a place to store photos or as a display of your
+                  memories
+                </p>
+                <div class="d-flex gap-2">
+                  <div>
+                    <button class="btn btn-r" (click)="showAddDialog()">
+                      Add Memories
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <ngb-carousel
+                *ngIf="images"
+                [showNavigationArrows]="showNavigationArrows"
+                [showNavigationIndicators]="showNavigationIndicators"
+              >
+                <ng-template ngbSlide *ngFor="let image of images">
+                  <div class="picsum-img-wrapper">
+                    <img
+                      [src]="image"
+                      alt="Random slide"
+                      class="prev img-carousel"
+                    />
+                  </div>
+                  <div class="carousel-caption"></div>
+                </ng-template>
+              </ngb-carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="d-grid gap-5">
+      <div class="d-flex gap-5">
+        <div class="wrapper">
+          <p-card>
+            <ng-template pTemplate="header">
+              <p-image
+                alt="card"
+                src="/assets/img/desktop.gif"
+                [preview]="true"
+              ></p-image>
+            </ng-template>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Inventore sed consequuntur error repudiandae numquam deserunt
+              quisquam repellat libero asperiores earum nam nobis, culpa ratione
+              quam perferendis esse, cupiditate neque quas!
+            </p>
+            <ng-template pTemplate="footer"> </ng-template>
+          </p-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dialog-class">
+  <app-add-dialog
+    [isOpen]="visibleAddDialog"
+    (closeSelf)="onCloseAddDialog($event)"
+  ></app-add-dialog>
+</div>

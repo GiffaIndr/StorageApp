@@ -1,0 +1,57 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "firstName": "raul",
+      "lastName": "kingkung",
+      "email": "gajah@gmail.com",
+      "mobile": "0872321573"
+    },
+    {
+      "id": 2,
+      "firstName": "ritoh",
+      "lastName": "markotoh",
+      "email": "hilih@gmail.com",
+      "mobile": "08723341573"
+    },
+    {
+      "id": 3,
+      "firstName": "ringul",
+      "lastName": "ramaul",
+      "email": "halah@gmail.com",
+      "mobile": "08723341573"
+    },
+    {
+      "fullname": "anak siapa ",
+      "email": "",
+      "password": "namabapak",
+      "mobile": 99349393,
+      "id": 4
+    },
+    {
+      "fullname": "itu ibu lu?",
+      "email": "",
+      "password": "233564532",
+      "mobile": 23343,
+      "id": 5
+    },
+    {
+      "fullname": "anak siapa anda",
+      "email": "",
+      "password": "GIFFA2005",
+      "mobile": 23734823924,
+      "id": 6
+    },
+    {
+      "fullname": "anak siapa ",
+      "email": "gildun@gmail.com",
+      "password": "GIFFA2005",
+      "mobile": 2134,
+      "id": 7
+    }
+  ],
+  "signupUsers": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

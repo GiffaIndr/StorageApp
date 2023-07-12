@@ -1,0 +1,25 @@
+<div class="container mt-1">
+    <div class="card">
+        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+            <h1 style="color: black">signup</h1>
+            <div class="form-group">
+                <label for="exampleInputPassword1" style="color: black;">Full Name</label>
+                <input type="text" formControlName="fullname" class="form-control" id="exampleInputPassword1" placeholder="full name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" style="color: black;">Mobile Number</label>
+                <input type="number" formControlName="mobile" class="form-control" id="exampleInputPassword1" placeholder="mobile number">
+              </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1" style="color: black;">Email address</label>
+              <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp"  class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" style="color: black;">Password</label>
+              <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+</div>

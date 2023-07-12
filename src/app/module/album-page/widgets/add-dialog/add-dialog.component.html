@@ -1,0 +1,35 @@
+<p-dialog  [header]="
+'ADD MEMMORIES'
+"
+[(visible)]="isOpen"
+[style]="{ width: '50vw' }"
+[modal]="true"
+(onHide)="onClose()"
+>
+        
+       <div class="container-dialog">
+        <div class="d-flex mt-4  gap-4">
+           <div>
+            <span class="p-float-label">
+                <input type="text" class="form-control"  id="Title"/>
+                <label htmlFor="Title">Title</label>
+            </span>
+           </div>
+           <div>
+            <span class="p-float-label">
+                <input type="text" class="form-control"  id="Title"/>
+                <label htmlFor="Title">Title</label>
+            </span>
+           </div>
+        </div>
+        <div class="text-d">
+            <span class="p-float-label">
+                <textarea id="Description" class="text-a"></textarea>
+                <label for="Description">Description</label>
+            </span>
+            
+        </div>
+        <div>
+            
+        </div>
+       </div> </p-dialog>

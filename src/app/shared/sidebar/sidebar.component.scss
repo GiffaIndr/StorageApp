@@ -1,0 +1,48 @@
+.image-title{
+    text-align: center;
+}
+.container-side{
+    padding: 15px;
+}
+::ng-deep .container-side{
+    background-image:linear-gradient(0deg, rgb(17, 5, 63), rgba(46, 39, 55, 0.3)), url("/assets/img/5856.jpg");
+    background-size: cover;
+}
+.text-a{
+    font-size: 12px;
+}
+.btn-content{
+    width: 100%;
+    border-radius: 5px;
+    height: 5vh;
+    background-color: transparent;
+    text-align: left;
+    text-decoration: none;
+    color: var(--main-color);
+    border: none;
+}
+
+ .btn-dashboard{
+    background-color: rgb(43, 20, 64);
+    width: 100%;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    height: 5vh;
+    text-align: left;
+    color: var(--second-color);
+    border: none;
+}
+.btn-content:hover{
+    background-color: rgba(38, 0, 110, 0.197);
+}
+.container-content{
+    margin-top:12px;
+    display: grid;
+}
+.bg-content{
+    margin-top: 3px;
+    padding: 1rem;
+    padding-top: 1px;
+    background-color: var(--second-color);
+}

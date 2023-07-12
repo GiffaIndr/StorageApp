@@ -1,0 +1,27 @@
+<div class="main-container">
+    <mat-drawer-container class="bg-container" autosize>
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+      <app-sidebar>
+      </app-sidebar>
+        </mat-drawer>
+        <div class="container">
+            <div class="d-flex" style="justify-content: space-between;">
+                <div>
+                    <button type="button" class="btn" mat-button (click)="drawer.toggle()">
+                        <i class="fa-solid fa-bars" style="color: var(--second-color)"></i>
+                      </button>
+                </div>
+          
+          <div class="header">       
+                <app-header></app-header>
+          </div>
+
+          </div>
+       <div class="container">
+        <router-outlet></router-outlet>
+       </div>
+       
+        </div>
+      </mat-drawer-container>
+    
+</div>

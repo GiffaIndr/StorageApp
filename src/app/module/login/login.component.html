@@ -1,0 +1,23 @@
+<div class="container mt-1">
+    <div class="card">
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <h1 style="color: black">login</h1>
+            <div class="form-group">
+              <label for="exampleInputEmail1" style="color: black;">Email address</label>
+              <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" style="color: black;">Password</label>
+              <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <span style="color: black">forgot password? sign up here </span>
+            <a  
+            routerLink="/signup"
+            >
+           signup
+            </a>
+          </form>
+    </div>
+</div>
